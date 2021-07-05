@@ -30,11 +30,11 @@ spec:
             - name: PROVISIONER_NAME
               value: fuseim.pri/ifs
             - name: NFS_SERVER
-              value: 172.17.79.3
+              value: 172.16.20.99
             - name: NFS_PATH
-              value: /data/nfs-share
+              value: /www/data/nacos/nfs-share
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 172.17.79.3
-            path: /data/nfs-share
+            server: 172.16.20.99
+            path: /www/data/nacos/nfs-share
